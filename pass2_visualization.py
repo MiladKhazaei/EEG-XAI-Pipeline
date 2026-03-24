@@ -10,7 +10,7 @@ import pandas as pd
 # -------------------------------------------------
 # 1. Initialization
 # -------------------------------------------------
-# Let's standardize your output folder to 'Journal_Visualizations'
+# Let's standardize your output folder to 'Visualizations'
 base_out_dir = 'Visualizations'
 
 os.makedirs(f'{base_out_dir}/manual_gradcam_heatmaps', exist_ok=True)
