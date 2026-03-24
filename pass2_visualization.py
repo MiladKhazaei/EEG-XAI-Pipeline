@@ -16,8 +16,7 @@ base_out_dir = 'Visualizations'
 os.makedirs(f'{base_out_dir}/manual_gradcam_heatmaps', exist_ok=True)
 os.makedirs(f'{base_out_dir}/manual_gradcam_overlays', exist_ok=True)
 os.makedirs(f'{base_out_dir}/shap_analysis_results', exist_ok=True)
-# important
-model.to(device)
+
 model.eval() 
 
 ch_names = [
