@@ -34,7 +34,6 @@ Instead of plotting every epoch or batch, this pipeline uses a targeted approach
 
 _Targeted extraction of pre-ictal transients and artifacts._
 
-_(Note: Replace the URL below with the actual link to your best image once uploaded to GitHub)_
 ![Representative XAI Output](https://github.com/MiladKhazaei/EEG-XAI-Pipeline/blob/main/best_gradcam_result.png?raw=true)
 
 ---
