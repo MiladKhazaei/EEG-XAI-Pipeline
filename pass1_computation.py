@@ -6,7 +6,7 @@ import shap
 import pandas as pd
 
 # Put model in evaluation mode
-model.eval()  # مدل را در حالت evaluation قرار می‌دهیم
+model.eval()
 
 # Channel names (21 EEG + 1 EKG)
 ch_names = [
