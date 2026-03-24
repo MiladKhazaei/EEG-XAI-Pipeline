@@ -16,7 +16,8 @@ base_out_dir = 'Visualizations'
 os.makedirs(f'{base_out_dir}/manual_gradcam_heatmaps', exist_ok=True)
 os.makedirs(f'{base_out_dir}/manual_gradcam_overlays', exist_ok=True)
 os.makedirs(f'{base_out_dir}/shap_analysis_results', exist_ok=True)
-
+# important
+model.to(device)
 model.eval() 
 
 ch_names = [
@@ -137,7 +138,8 @@ print(f"Target IDs locked: {final_target_ids}")
 # -------------------------------------------------
 print("Initializing Fast SHAP Explainer...")
 background_features, _, _ = next(iter(train_loader))
-small_background = background_features[:30].to(device) # SHAP Speed Optimization by select 30 ones
+# SHAP Speed Optimization by select 30 ones
+small_background = background_features[:30].to(device) 
 explainer = shap.GradientExplainer(model, small_background)
 
 global_idx = 0
