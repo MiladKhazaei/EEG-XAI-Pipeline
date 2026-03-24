@@ -6,6 +6,9 @@ import shap
 import pandas as pd
 
 # Put model in evaluation mode
+# Don't forget to use:
+# device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+# model.to(device)
 model.eval()
 
 # Channel names (21 EEG + 1 EKG)
