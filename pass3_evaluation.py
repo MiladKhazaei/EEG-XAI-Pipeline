@@ -103,6 +103,6 @@ axs[1].legend(loc="lower right")
 
 plt.suptitle("Model Performance on Dataset (ES vs. PNES)", fontsize=16)
 plt.tight_layout()
-plt.savefig('Figure_7_Performance.png', dpi=600, bbox_inches='tight')
+plt.savefig('performance.png', dpi=600, bbox_inches='tight')
 plt.grid(True)
 plt.show()
