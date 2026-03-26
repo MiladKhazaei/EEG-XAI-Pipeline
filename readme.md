@@ -28,13 +28,19 @@ Instead of plotting every epoch or batch, this pipeline uses a targeted approach
 - Parses the CSV to identify the "Best IDs" (the highest-confidence, clinically relevant true positives/negatives).
 - Fast-forwards through the dataset and **only** triggers the heavy `matplotlib` and SHAP visualization functions for those specific, highly-representative IDs.
 
+### 3️⃣ Pass 3: Evaluation (`pass3_evaluation.py`)
+- Aggregates "Window-Level" network outputs to "Signal-Level" patient diagnoses.
+- Uses **Soft Voting Aggregation** (averaging raw `F.softmax` probabilities) to generate a mathematically meticulous ROC-AUC Curve and Confusion Matrix.
+- 
 ---
 
 ## 📊 Visual Results
 
 _Targeted extraction of pre-ictal transients and artifacts._
-
+### Interpretability (SHAP)
 ![Representative XAI Output](https://github.com/MiladKhazaei/EEG-XAI-Pipeline/blob/main/best_gradcam_result.png?raw=true)
+### Global Performance
+![ROC and Confusion Matrix]()
 
 ---
 
@@ -59,3 +65,8 @@ Update the final_target_ids array inside pass2_visualization.py with your select
 ```bash
 python pass2_visualization.py
 ```
+### Step 4: Generate the overall Confusion Matrix and ROC
+```bash
+python pass3_evaluation.py
+```
+
