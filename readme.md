@@ -31,7 +31,7 @@ Instead of plotting every epoch or batch, this pipeline uses a targeted approach
 ### 3️⃣ Pass 3: Evaluation (`pass3_evaluation.py`)
 - Aggregates "Window-Level" network outputs to "Signal-Level" patient diagnoses.
 - Uses **Soft Voting Aggregation** (averaging raw `F.softmax` probabilities) to generate a mathematically meticulous ROC-AUC Curve and Confusion Matrix.
-- 
+  
 ---
 
 ## 📊 Visual Results
@@ -40,7 +40,7 @@ _Targeted extraction of pre-ictal transients and artifacts._
 ### Interpretability (SHAP)
 ![Representative XAI Output](https://github.com/MiladKhazaei/EEG-XAI-Pipeline/blob/main/best_gradcam_result.png?raw=true)
 ### Global Performance
-![ROC and Confusion Matrix]()
+![ROC and Confusion Matrix](https://github.com/MiladKhazaei/EEG-XAI-Pipeline/blob/main/performance.png?raw=true)
 
 ---
 
