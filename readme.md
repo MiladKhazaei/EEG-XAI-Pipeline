@@ -45,7 +45,7 @@ _Targeted extraction of pre-ictal transients and artifacts._
 
 ### Global Performance
 
-![ROC and Confusion Matrix](https://github.com/MiladKhazaei/EEG-XAI-Pipeline/blob/main/performance.png?raw=true)
+![ROC and Confusion Matrix]([https://github.com/MiladKhazaei/EEG-XAI-Pipeline/blob/main/performance.png?raw=true](https://github.com/MiladKhazaei/EEG-XAI-Pipeline/blob/main/images/performance.png?raw=true))
 
 ---
 
