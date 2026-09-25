@@ -1,6 +1,6 @@
 # 🧠 EEG-XAI-Pipeline: Two-Pass Architecture for High-Performance Deep Learning Visualization
 
-![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+![Python](https://img.shields.io/badge/Python-3.11.10-blue)
 ![PyTorch](https://img.shields.io/badge/PyTorch-Deep%20Learning-EE4C2C)
 ![SHAP](https://img.shields.io/badge/Explainable%20AI-SHAP-brightgreen)
 
@@ -48,6 +48,26 @@ _Targeted extraction of pre-ictal transients and artifacts._
 ![ROC and Confusion Matrix](https://github.com/MiladKhazaei/EEG-XAI-Pipeline/blob/main/performance.png?raw=true)
 
 ---
+
+## Prerequisites
+
+- Python 3.11.10
+- Virtual environment (recommended)
+
+### Instalation
+
+1. Create and activate an isolated environment:
+
+```bash
+python -m venv .venv
+source .venv/bin/activate # On Windows: .venv\Scripts\activate
+```
+
+2. Install the required dependencies:
+
+```bash
+pip install -r requirements.txt
+```
 
 ## 🚀 Usage
 
